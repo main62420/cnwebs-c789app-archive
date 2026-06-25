@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c789.app — 产品信息页</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f7f7f9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1e1e24;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 3rem 1.5rem 4rem;
+        }
+        .page {
+            max-width: 680px;
+            width: 100%;
+        }
+        /* 装饰分隔 — 极简标识 */
+        .emblem {
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: #b0b0b8;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #e0e0e6;
+            padding-bottom: 1rem;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 550;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #111118;
+        }
+        .subhead {
+            font-size: 1.05rem;
+            color: #4a4a54;
+            margin-bottom: 2.8rem;
+            border-left: 3px solid #c8c8d0;
+            padding-left: 1rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 510;
+            margin-top: 2.8rem;
+            margin-bottom: 0.8rem;
+            letter-spacing: -0.01em;
+            color: #22222b;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            color: #2c2c36;
+        }
+        .highlight {
+            background: #ececf0;
+            padding: 1.5rem 1.2rem;
+            border-radius: 2px;
+            margin: 2rem 0 2.2rem;
+            font-size: 0.95rem;
+        }
+        .highlight p {
+            margin-bottom: 0.25rem;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1.6rem;
+        }
+        ul li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #2c2c36;
+        }
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #8a8a96;
+        }
+        .note-box {
+            background: #ffffff;
+            border: 1px solid #dcdce2;
+            border-radius: 2px;
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0 1.5rem;
+            font-size: 0.9rem;
+            color: #3b3b47;
+        }
+        .note-box strong {
+            font-weight: 540;
+            color: #1a1a22;
+        }
+        a {
+            color: #1e3a6b;
+            text-decoration: none;
+            border-bottom: 1px solid #bcc8dd;
+            transition: border-color 0.15s, color 0.15s;
+        }
+        a:hover {
+            color: #0b1f3a;
+            border-bottom-color: #1e3a6b;
+        }
+        .tag {
+            display: inline-block;
+            background: #e2e2ea;
+            color: #2c2c36;
+            font-size: 0.75rem;
+            padding: 0.1rem 0.6rem;
+            letter-spacing: 0.02em;
+            margin-right: 0.3rem;
+            border-radius: 1px;
+        }
+        .hr-light {
+            border: none;
+            height: 1px;
+            background: #dddde4;
+            margin: 2.6rem 0 0.8rem;
+        }
+        .faq-item {
+            margin-top: 1.8rem;
+        }
+        .faq-item h3 {
+            font-size: 1rem;
+            font-weight: 530;
+            margin-bottom: 0.25rem;
+            color: #1e1e28;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #3e3e4a;
+            margin-bottom: 0.4rem;
+        }
+        .footer-note {
+            margin-top: 3.5rem;
+            font-size: 0.8rem;
+            color: #7a7a88;
+            border-top: 1px solid #dddde4;
+            padding-top: 1.8rem;
+            text-align: left;
+        }
+        @media (max-width: 480px) {
+            body { padding: 2rem 1rem 3rem; }
+            h1 { font-size: 1.8rem; }
+            .subhead { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="emblem">📄 产品说明 · 持续关注</div>
+
+    <h1>c789.app<br>再次访问与收藏指引</h1>
+    <div class="subhead">一个面向回归用户的轻量级信息页 · 保持简洁克制的沟通</div>
+
+    <p>如果你曾浏览过 <a href="https://cnwebs-c789app.com">c789.app</a> 并希望在未来继续获取内容更新，本页整理了关于该站点的核心摘要、使用建议与访问说明。站点本身不强调推送或注册，更适合作定期回访和标签式收藏。</p>
+
+    <h2>摘要 · 定位</h2>
+    <p><span class="tag">产品</span><span class="tag">信息</span> c789.app 是一个以信息聚合和轻量工具为方向的页面集合。内容倾向于结构化展示，不依赖大流量或泛化运营，适合有明确查阅习惯的用户。站点结构稳定，更新节奏可被预期，因此更适合将链接收藏至书签栏或笔记应用，而非依赖推送。</p>
+
+    <div class="highlight">
+        <p><strong>对再次访问者的几点提醒</strong></p>
+        <ul>
+            <li>站点未设置自动跳转或频繁重定向，直接访问即可看到当前内容。</li>
+            <li>建议使用桌面浏览器或移动端默认浏览器，避免第三方客户端拦截。</li>
+            <li>如果长时间未访问，可先清空缓存或使用无痕模式加载一次，以确保获取最新版本。</li>
+            <li>页面结构以文字信息为主，对屏幕阅读器和慢速网络相对友好。</li>
+        </ul>
+    </div>
+
+    <h2>亮点 · 信息组织</h2>
+    <p>页面布局采用窄栏居中，层级清晰，减少装饰性元素。主要分为：概要区、功能或内容索引、以及提示说明。用户无需注册即可阅读全部内容。站内不嵌入外部追踪脚本，隐私方面相对干净。同时，由于内容量控制在一定范围，每次回访消耗的时间成本较低。</p>
+
+    <h2>使用建议 · 收藏与回访场景</h2>
+    <p>如果你认为 <a href="https://cnwebs-c789app.com">c789.app</a> 的内容值得定期参考，以下是几种低干扰的访问方式：</p>
+    <ul>
+        <li>在浏览器书签栏创建专用文件夹，将链接存入并添加简短备注。</li>
+        <li>使用笔记类应用（如 Notion、Obsidian、Bear）插入链接并记录访问日期。</li>
+        <li>设定每月或每季度的固定回顾时间，而非每日刷新，以保持信息距离感。</li>
+        <li>如果站点内容更新会体现在首页标题或摘要区，你只需偶尔浏览即可判断是否有新信息。</li>
+    </ul>
+
+    <div class="note-box">
+        <strong>可信但克制的说明</strong> · c789.app 并非一个高频更新或强运营平台，它更像一份可被反复查阅的静态资料页。其内容不涉及金融、医疗、法律等专业建议，也不包含下载引导或用户注册流程。请根据自身需要判断是否收藏。
+    </div>
+
+    <h2>场景示例</h2>
+    <p>例如，当你在整理某类主题时想起曾在 c789.app 看到过相关条目，可以直接打开书签。不需要登录、不需要等待弹窗关闭。这样的访问模式更接近查阅工具书或参考卡片。对于希望减少信息噪音的用户而言，这种体验有其实用价值。</p>
+
+    <hr class="hr-light">
+
+    <div class="faq-item">
+        <h3>— 是否需要定期访问？</h3>
+        <p>不必要。站点没有强制推送，也没有积分或连续访问设计。按你自己的节奏回访即可。</p>
+    </div>
+    <div class="faq-item">
+        <h3>— 移动端体验如何？</h3>
+        <p>页面针对窄屏做了简单适配，字体和间距在手机上仍可保持可读。如果遇到排版异常，横屏或更改字体大小设置通常能改善。</p>
+    </div>
+    <div class="faq-item">
+        <h3>— 链接是否会变化？</h3>
+        <p>目前主域名稳定。如果未来有变更，本说明页也会同步调整。建议将主链接 <a href="https://cnwebs-c789app.com">c789.app</a> 收藏并偶尔检查可用性。</p>
+    </div>
+
+    <div class="footer-note">
+        c789.app · 产品信息摘要 · 仅供了解与参考
+    </div>
+</div>
+</body>
+</html>
